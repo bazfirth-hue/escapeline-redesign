@@ -529,38 +529,43 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--navy-dark);
 }
 
-/* Image placeholder — swap with actual photo */
-.hero-bg {
+/*
+  HERO SAFEGUARDING BACKGROUND SYSTEM
+  ------------------------------------
+  Drop your high-res safeguarding image into the background-image property below.
+  Recommended: gritty, high-contrast photo of a young person in an urban
+  environment at dusk — underpass, street corner, city alley. Avoid identifiable
+  faces unless you have explicit written consent. Black-and-white or
+  desaturated images work powerfully against the navy overlay.
+*/
+.hero-safeguarding-bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(135deg,
-      rgba(13,33,55,0.96) 0%,
-      rgba(27,58,92,0.88) 50%,
-      rgba(13,33,55,0.96) 100%);
+  background-color: var(--navy-dark); /* solid fallback until image is added */
   /*
-     TO ADD YOUR IMAGE:
-     background-image: url('images/hero-community.jpg');
-     background-size: cover;
-     background-position: center top;
-     Then keep the overlay below.
+    UNCOMMENT AND FILL IN WHEN YOU HAVE YOUR IMAGE:
+    background-image: url('images/hero-safeguarding-community.jpg');
+    background-size: cover;
+    background-position: center 30%;
   */
 }
 
-.hero-bg::after {
+/* Dark directional overlay — keeps headline text legible over any photo */
+.hero-safeguarding-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to right,
-    rgba(13,33,55,0.92) 0%,
-    rgba(13,33,55,0.5) 60%,
-    rgba(13,33,55,0.2) 100%
+    105deg,
+    rgba(13,33,55,0.96) 0%,
+    rgba(13,33,55,0.82) 45%,
+    rgba(13,33,55,0.48) 75%,
+    rgba(13,33,55,0.22) 100%
   );
 }
 
-/* Decorative geometric accent */
-.hero-bg::before {
+/* Decorative geometric accent — orange/green diagonal panel */
+.hero-safeguarding-bg::before {
   content: '';
   position: absolute;
   top: -10%;
@@ -569,6 +574,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 120%;
   background: linear-gradient(135deg, rgba(232,93,4,0.06), rgba(45,106,79,0.08));
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -1684,4 +1691,284 @@ section {
    ========================================================================== */
 .btn {
   --sp-7: 1.75rem;
+}
+
+/* ==========================================================================
+   20. MENTOR PORTRAIT GRID
+   ========================================================================== */
+
+.mentor-grid-section {
+  background: var(--off-white);
+}
+
+.mentor-portrait-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  margin-top: var(--sp-12);
+}
+
+@media (min-width: 480px) {
+  .mentor-portrait-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .mentor-portrait-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.mentor-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--ease), transform var(--ease);
+}
+
+.mentor-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/*
+  MENTOR AVATAR FRAME
+  -------------------
+  This is your portrait mask container. It holds the photo and creates the
+  diagonal editorial cut at the bottom using clip-path.
+
+  To add a photo: replace .mentor-avatar-placeholder with:
+    <img src="images/mentor-name.jpg"
+         alt="Portrait of [Name]..."
+         class="mentor-portrait-img">
+*/
+.mentor-avatar-frame {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--navy);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+/* Real portrait image — shown once photo is dropped in */
+.mentor-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.mentor-card:hover .mentor-portrait-img {
+  transform: scale(1.04);
+}
+
+/* Placeholder — remove once real photo is in place */
+.mentor-avatar-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  background: linear-gradient(145deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: rgba(255,255,255,0.3);
+  font-size: 0.72rem;
+  text-align: center;
+  padding: var(--sp-4);
+  line-height: 1.4;
+}
+
+/* Role badge overlaid at the bottom of the avatar frame */
+.mentor-avatar-badge {
+  position: absolute;
+  bottom: var(--sp-3);
+  left: var(--sp-3);
+  z-index: 2;
+  background: rgba(232,93,4,0.92);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.mentor-card-body {
+  padding: var(--sp-5) var(--sp-5) var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+}
+
+.mentor-card-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.mentor-card-role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mentor-card-quote {
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--light-gray);
+}
+
+.mentor-card-quote p {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   21. WORKSHOPS IN ACTION BANNER
+   ========================================================================== */
+
+.workshops-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background: var(--navy-dark);
+}
+
+/*
+  WORKSHOPS BANNER BACKGROUND
+  ----------------------------
+  Drop your wide-format classroom/workshop photo here.
+  Recommended: landscape shot of a facilitator at the front of a classroom,
+  engaged students visible. Natural classroom light preferred.
+  Avoid identifiable student faces without signed media consent.
+*/
+.workshops-banner-bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--navy);
+  background-image: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 60%);
+  /*
+    UNCOMMENT AND FILL IN WHEN YOU HAVE YOUR IMAGE:
+    background-image: url('images/workshops-in-action.jpg');
+    background-size: cover;
+    background-position: center;
+  */
+}
+
+/* Dark overlay — text legibility over any photo */
+.workshops-banner-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(13,33,55,0.97) 0%,
+    rgba(13,33,55,0.86) 55%,
+    rgba(13,33,55,0.65) 100%
+  );
+}
+
+.workshops-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-block: var(--sp-20);
+}
+
+.workshops-banner-header {
+  max-width: 660px;
+  margin-bottom: var(--sp-10);
+}
+
+.workshops-banner-header .section-eyebrow {
+  color: var(--orange);
+}
+
+.workshops-banner-header .section-title {
+  color: var(--white);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  margin-bottom: var(--sp-4);
+}
+
+.workshops-banner-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+/* Metric strip */
+.workshop-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-10);
+}
+
+@media (min-width: 900px) {
+  .workshop-metrics-strip {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--sp-6);
+  }
+}
+
+.workshop-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-5) var(--sp-5);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  transition: background var(--ease);
+}
+
+.workshop-metric-item:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+.workshop-metric-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+
+.workshop-metric-number.accent-orange { color: var(--orange); }
+.workshop-metric-number.accent-green  { color: #4ade80; }
+
+.workshop-metric-label {
+  display: block;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.58);
+  line-height: 1.45;
+}
+
+.workshops-banner-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  align-items: center;
 }
