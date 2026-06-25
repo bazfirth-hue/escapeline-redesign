@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="portraitBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1B3A5C"/>
+      <stop offset="100%" stop-color="#0D2137"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#112335"/>
+      <stop offset="100%" stop-color="#0c1c2c"/>
+    </linearGradient>
+    <radialGradient id="keyLight" cx="42%" cy="36%" r="30%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.06)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="rgba(13,33,55,0)"/>
+      <stop offset="100%" stop-color="rgba(13,33,55,0.65)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#portraitBg)"/>
+
+  <!-- Subtle key-light from upper left -->
+  <ellipse cx="260" cy="270" rx="220" ry="240" fill="url(#keyLight)"/>
+
+  <!-- ── TORSO / SHOULDERS ───────────────────────── -->
+  <path d="M40 800 L40 560
+           Q40 500 100 476
+           Q200 448 300 442
+           Q400 448 500 476
+           Q560 500 560 560
+           L560 800 Z"
+        fill="url(#bodyGrad)"/>
+
+  <!-- Collar / neckline suggestion -->
+  <path d="M252 448 L300 472 L348 448" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- ── NECK ─────────────────────────────────────── -->
+  <rect x="268" y="392" width="64" height="72" rx="14" fill="#112437"/>
+
+  <!-- ── HEAD ──────────────────────────────────────── -->
+  <!-- Ears -->
+  <ellipse cx="178" cy="322" rx="15" ry="22" fill="#12253a"/>
+  <ellipse cx="422" cy="322" rx="15" ry="22" fill="#12253a"/>
+  <!-- Main head shape -->
+  <ellipse cx="300" cy="294" rx="124" ry="138" fill="#12253a"/>
+  <!-- Hair — top of head slightly darker -->
+  <path d="M178 210 Q178 150 300 144 Q422 150 422 210 Q422 176 300 170 Q178 176 178 210 Z" fill="#0b1c2e"/>
+  <ellipse cx="300" cy="162" rx="122" ry="52" fill="#0b1c2e"/>
+
+  <!-- ── FACE FEATURES (abstract — enough to read as a face) ── -->
+  <!-- Left eye -->
+  <ellipse cx="258" cy="292" rx="16" ry="10" fill="#0d1e30"/>
+  <ellipse cx="261" cy="290" rx="5"  ry="4"  fill="rgba(255,255,255,0.09)"/>
+  <!-- Right eye -->
+  <ellipse cx="342" cy="292" rx="16" ry="10" fill="#0d1e30"/>
+  <ellipse cx="345" cy="290" rx="5"  ry="4"  fill="rgba(255,255,255,0.09)"/>
+  <!-- Nose bridge (shadow only) -->
+  <path d="M296 318 Q296 334 300 340 Q304 334 304 318" fill="rgba(0,0,0,0.10)"/>
+  <!-- Mouth — closed, neutral/confident expression -->
+  <rect x="270" y="354" width="60" height="7" rx="3.5" fill="rgba(0,0,0,0.20)"/>
+
+  <!-- Vignette overlay for depth -->
+  <rect width="600" height="800" fill="url(#vignette)"/>
+
+  <!-- Orange brand accent bar at foot of frame -->
+  <rect x="0"   y="782" width="600" height="18" fill="rgba(232,93,4,0.28)"/>
+  <rect x="0"   y="782" width="600" height="2"  fill="rgba(232,93,4,0.55)"/>
+</svg>

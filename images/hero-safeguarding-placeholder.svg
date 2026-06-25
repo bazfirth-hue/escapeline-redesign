@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#030810"/>
+      <stop offset="60%"  stop-color="#0D2137"/>
+      <stop offset="100%" stop-color="#0e1c2c"/>
+    </linearGradient>
+    <radialGradient id="streetGlow" cx="50%" cy="44%" r="22%">
+      <stop offset="0%"   stop-color="#E85D04" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#E85D04" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="roadSurface" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%"   stop-color="#0c1924"/>
+      <stop offset="100%" stop-color="#09131d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky / background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- Distant warm streetlight glow -->
+  <ellipse cx="960" cy="482" rx="520" ry="200" fill="url(#streetGlow)"/>
+
+  <!-- Road surface (perspective trapezoid) -->
+  <polygon points="260,1080 1660,1080 1190,485 730,485" fill="url(#roadSurface)"/>
+
+  <!-- Road edge lines -->
+  <line x1="260" y1="1080" x2="730"  y2="485" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+  <line x1="1660" y1="1080" x2="1190" y2="485" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+
+  <!-- Centre-line dashes shrinking toward vanishing point -->
+  <rect x="955" y="498" width="10" height="28" rx="3" fill="rgba(255,255,255,0.10)"/>
+  <rect x="953" y="545" width="14" height="34" rx="3" fill="rgba(255,255,255,0.09)"/>
+  <rect x="950" y="602" width="20" height="44" rx="3" fill="rgba(255,255,255,0.07)"/>
+  <rect x="946" y="672" width="28" height="56" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <rect x="940" y="754" width="40" height="72" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="930" y="858" width="60" height="88" rx="3" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- ── LEFT BUILDING MASS ───────────────────────────── -->
+  <rect x="0" y="100" width="295" height="980" fill="#030810"/>
+  <rect x="0" y="0"   width="295" height="100" fill="#060f1a"/>
+  <!-- Window lights (faint amber — some occupied, most dark) -->
+  <rect x="32"  y="130" width="44" height="58" rx="2" fill="rgba(232,93,4,0.08)"/>
+  <rect x="96"  y="130" width="44" height="58" rx="2" fill="rgba(232,93,4,0.04)"/>
+  <rect x="160" y="130" width="44" height="58" rx="2" fill="rgba(232,93,4,0.11)"/>
+  <rect x="32"  y="214" width="44" height="58" rx="2" fill="rgba(232,93,4,0.06)"/>
+  <rect x="96"  y="214" width="44" height="58" rx="2" fill="rgba(232,93,4,0.10)"/>
+  <rect x="32"  y="298" width="44" height="58" rx="2" fill="rgba(232,93,4,0.03)"/>
+  <rect x="160" y="298" width="44" height="58" rx="2" fill="rgba(232,93,4,0.09)"/>
+  <rect x="96"  y="382" width="44" height="58" rx="2" fill="rgba(232,93,4,0.07)"/>
+  <rect x="32"  y="382" width="44" height="58" rx="2" fill="rgba(232,93,4,0.05)"/>
+
+  <!-- Left lamppost -->
+  <rect x="292" y="200" width="6" height="880" fill="#08121e"/>
+  <rect x="258" y="198" width="72" height="7"   rx="3" fill="#08121e"/>
+  <circle cx="258" cy="193" r="9" fill="rgba(232,93,4,0.65)"/>
+  <ellipse cx="258" cy="193" rx="50" ry="100" fill="rgba(232,93,4,0.05)"/>
+
+  <!-- ── RIGHT BUILDING MASS ──────────────────────────── -->
+  <rect x="1625" y="80"  width="295" height="1000" fill="#030810"/>
+  <rect x="1625" y="0"   width="295" height="80"   fill="#060f1a"/>
+  <!-- Window lights -->
+  <rect x="1644" y="110" width="44" height="58" rx="2" fill="rgba(232,93,4,0.07)"/>
+  <rect x="1708" y="110" width="44" height="58" rx="2" fill="rgba(232,93,4,0.11)"/>
+  <rect x="1772" y="110" width="44" height="58" rx="2" fill="rgba(232,93,4,0.04)"/>
+  <rect x="1644" y="194" width="44" height="58" rx="2" fill="rgba(232,93,4,0.10)"/>
+  <rect x="1772" y="194" width="44" height="58" rx="2" fill="rgba(232,93,4,0.06)"/>
+  <rect x="1708" y="278" width="44" height="58" rx="2" fill="rgba(232,93,4,0.09)"/>
+  <rect x="1644" y="278" width="44" height="58" rx="2" fill="rgba(232,93,4,0.05)"/>
+  <rect x="1772" y="362" width="44" height="58" rx="2" fill="rgba(232,93,4,0.08)"/>
+  <rect x="1644" y="362" width="44" height="58" rx="2" fill="rgba(232,93,4,0.03)"/>
+
+  <!-- Right lamppost -->
+  <rect x="1622" y="200" width="6" height="880" fill="#08121e"/>
+  <rect x="1590" y="198" width="72" height="7"   rx="3" fill="#08121e"/>
+  <circle cx="1662" cy="193" r="9" fill="rgba(232,93,4,0.65)"/>
+  <ellipse cx="1662" cy="193" rx="50" ry="100" fill="rgba(232,93,4,0.05)"/>
+
+  <!-- ── LONE YOUNG PERSON — hooded, from behind, walking away ─── -->
+  <!-- Ground shadow -->
+  <ellipse cx="960" cy="868" rx="46" ry="10" fill="rgba(0,0,0,0.45)"/>
+  <!-- Legs -->
+  <rect x="944" y="792" width="20" height="74" rx="7" fill="#060e19"/>
+  <rect x="968" y="796" width="20" height="70" rx="7" fill="#050d17"/>
+  <!-- Body -->
+  <path d="M926 748 Q926 720 940 712 Q960 704 980 712 Q994 720 994 748 L994 796 L926 796 Z" fill="#07111d"/>
+  <!-- Shoulders -->
+  <ellipse cx="960" cy="724" rx="57" ry="22" fill="#06101c"/>
+  <!-- Hood outline -->
+  <ellipse cx="960" cy="706" rx="35" ry="31" fill="#060e18"/>
+  <!-- Head inside hood -->
+  <ellipse cx="960" cy="702" rx="22" ry="24" fill="#08131f"/>
+  <!-- Arms at sides -->
+  <rect x="912" y="732" width="15" height="54" rx="6" fill="#060e18" transform="rotate(-4 912 732)"/>
+  <rect x="990" y="732" width="15" height="54" rx="6" fill="#060e18" transform="rotate(4 990 732)"/>
+</svg>

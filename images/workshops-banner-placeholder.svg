@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640">
+  <defs>
+    <linearGradient id="classBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0D2137"/>
+      <stop offset="100%" stop-color="#1B3A5C"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0a1827"/>
+      <stop offset="100%" stop-color="#080f1a"/>
+    </linearGradient>
+    <linearGradient id="screenContent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="rgba(232,93,4,0.0)"/>
+      <stop offset="100%" stop-color="rgba(232,93,4,0.12)"/>
+    </linearGradient>
+    <radialGradient id="projLight" cx="8%" cy="30%" r="55%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="640" fill="url(#classBg)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="455" width="1920" height="185" fill="url(#floorGrad)"/>
+
+  <!-- Projector cone from top-left toward right -->
+  <polygon points="0,0 0,180 1920,640 1920,460" fill="rgba(255,255,255,0.015)"/>
+  <rect width="1920" height="640" fill="url(#projLight)"/>
+
+  <!-- ── PROJECTION SCREEN / WHITEBOARD ─────────── -->
+  <rect x="72"  y="72"  width="440" height="295" rx="5" fill="#0a1f35"/>
+  <rect x="76"  y="76"  width="432" height="287" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <rect x="72"  y="72"  width="440" height="295" rx="5" fill="url(#screenContent)"/>
+  <!-- Slide content lines -->
+  <rect x="100" y="106" width="210" height="14" rx="3" fill="rgba(255,255,255,0.14)"/>
+  <rect x="100" y="132" width="150" height="9"  rx="3" fill="rgba(255,255,255,0.07)"/>
+  <rect x="100" y="152" width="175" height="9"  rx="3" fill="rgba(255,255,255,0.05)"/>
+  <!-- Orange accent line -->
+  <rect x="100" y="178" width="376" height="3"  rx="1" fill="rgba(232,93,4,0.4)"/>
+  <rect x="100" y="196" width="260" height="9"  rx="3" fill="rgba(255,255,255,0.06)"/>
+  <rect x="100" y="216" width="200" height="9"  rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="100" y="236" width="230" height="9"  rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="256" width="160" height="9"  rx="3" fill="rgba(255,255,255,0.04)"/>
+  <!-- Escapeline orange square accent (bottom-right of slide) -->
+  <rect x="370" y="300" width="110" height="40" rx="3" fill="rgba(232,93,4,0.20)"/>
+
+  <!-- ── PRESENTER / FACILITATOR — standing, pointing to screen ── -->
+  <!-- Shadow on floor -->
+  <ellipse cx="582" cy="458" rx="30" ry="8" fill="rgba(0,0,0,0.5)"/>
+  <!-- Legs -->
+  <rect x="566" y="365" width="18" height="90" rx="6" fill="#07111d"/>
+  <rect x="585" y="368" width="18" height="87" rx="6" fill="#060f1b"/>
+  <!-- Body -->
+  <rect x="556" y="262" width="58" height="110" rx="9" fill="#0b1e32"/>
+  <!-- Extended arm pointing at board -->
+  <rect x="506" y="272" width="54" height="14" rx="6" fill="#0b1e32" transform="rotate(-12 506 272)"/>
+  <!-- Other arm at side -->
+  <rect x="610" y="278" width="14" height="56" rx="6" fill="#0b1e32" transform="rotate(5 610 278)"/>
+  <!-- Neck -->
+  <rect x="574" y="236" width="18" height="30" rx="4" fill="#0f2138"/>
+  <!-- Head -->
+  <ellipse cx="583" cy="222" rx="24" ry="26" fill="#0f2138"/>
+  <!-- Hair suggestion -->
+  <ellipse cx="583" cy="198" rx="24" ry="14" fill="#0a1827"/>
+
+  <!-- ── AUDIENCE — 3 rows of seated figures ─────────────── -->
+
+  <!-- Row 1 (foreground, largest, 8 figures) -->
+  <g transform="translate(640,375)">  <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(762,370)">  <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(884,374)">  <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1006,371)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1128,376)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1250,372)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1372,374)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1494,371)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+  <g transform="translate(1616,375)"> <ellipse cx="0" cy="-20" rx="19" ry="19" fill="#08141f"/> <path d="M-23,0 Q-23,-11 0,-15 Q23,-11 23,0 L23,32 L-23,32 Z" fill="#071019"/> </g>
+
+  <!-- Row 1 desk surface -->
+  <rect x="608" y="410" width="1050" height="3" rx="1" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- Row 2 (mid, 9 figures) -->
+  <g transform="translate(680,304)">  <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(796,300)">  <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(912,303)">  <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1028,301)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1144,304)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1260,302)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1376,303)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1492,301)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+  <g transform="translate(1608,304)"> <ellipse cx="0" cy="-16" rx="15" ry="15" fill="#071218"/> <path d="M-18,0 Q-18,-8 0,-12 Q18,-8 18,0 L18,25 L-18,25 Z" fill="#060e16"/> </g>
+
+  <!-- Row 2 desk surface -->
+  <rect x="648" y="336" width="1060" height="2" rx="1" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Row 3 (back, smallest, 8 figures) -->
+  <g transform="translate(720,242)">  <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(836,239)">  <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(952,241)">  <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(1068,240)"> <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(1184,242)"> <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(1300,240)"> <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(1416,241)"> <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+  <g transform="translate(1532,240)"> <ellipse cx="0" cy="-12" rx="12" ry="12" fill="#060f17"/> <path d="M-14,0 Q-14,-6 0,-9 Q14,-6 14,0 L14,19 L-14,19 Z" fill="#050c14"/> </g>
+
+  <!-- Row 3 desk surface -->
+  <rect x="688" y="270" width="950" height="2" rx="1" fill="rgba(255,255,255,0.02)"/>
+
+  <!-- Orange floor accent line -->
+  <rect x="0" y="456" width="1920" height="2" fill="rgba(232,93,4,0.22)"/>
+</svg>

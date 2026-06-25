@@ -541,12 +541,15 @@ h1, h2, h3, h4, h5, h6 {
 .hero-safeguarding-bg {
   position: absolute;
   inset: 0;
-  background-color: var(--navy-dark); /* solid fallback until image is added */
+  background-color: var(--navy-dark);
+  background-image: url('images/hero-safeguarding-placeholder.svg');
+  background-size: cover;
+  background-position: center 30%;
   /*
-    UNCOMMENT AND FILL IN WHEN YOU HAVE YOUR IMAGE:
+    SWAP FOR HIGH-RES PHOTO WHEN READY:
     background-image: url('images/hero-safeguarding-community.jpg');
-    background-size: cover;
-    background-position: center 30%;
+    Recommended: lone young person, dusk, urban South West location.
+    Gritty, high-contrast. No identifiable face without written consent.
   */
 }
 
@@ -1777,12 +1780,33 @@ section {
   align-items: center;
   justify-content: center;
   gap: var(--sp-3);
-  background: linear-gradient(145deg, var(--navy) 0%, var(--navy-light) 100%);
-  color: rgba(255,255,255,0.3);
+  background-image: url('images/mentor-portrait-placeholder.svg');
+  background-size: cover;
+  background-position: center top;
+  background-color: var(--navy);
+  color: rgba(255,255,255,0.55);
   font-size: 0.72rem;
   text-align: center;
   padding: var(--sp-4);
   line-height: 1.4;
+}
+
+/* Frosted label panel sits on top of the portrait SVG */
+.mentor-avatar-placeholder svg,
+.mentor-avatar-placeholder span {
+  position: relative;
+  z-index: 2;
+}
+
+.mentor-avatar-placeholder::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(13,33,55,0.75) 0%, rgba(13,33,55,0) 100%);
+  pointer-events: none;
 }
 
 /* Role badge overlaid at the bottom of the avatar frame */
@@ -1865,12 +1889,14 @@ section {
   position: absolute;
   inset: 0;
   background-color: var(--navy);
-  background-image: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 60%);
+  background-image: url('images/workshops-banner-placeholder.svg');
+  background-size: cover;
+  background-position: center;
   /*
-    UNCOMMENT AND FILL IN WHEN YOU HAVE YOUR IMAGE:
+    SWAP FOR HIGH-RES PHOTO WHEN READY:
     background-image: url('images/workshops-in-action.jpg');
-    background-size: cover;
-    background-position: center;
+    Recommended: wide classroom, facilitator at front, engaged students.
+    Natural classroom light. No identifiable student faces without signed media consent.
   */
 }
 
