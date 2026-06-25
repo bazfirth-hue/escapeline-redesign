@@ -1,70 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
   <defs>
+    <!-- Near-black background with a slight navy tint -->
     <linearGradient id="portraitBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#1B3A5C"/>
-      <stop offset="100%" stop-color="#0D2137"/>
+      <stop offset="0%"   stop-color="#0a1422"/>
+      <stop offset="100%" stop-color="#040912"/>
     </linearGradient>
-    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#112335"/>
-      <stop offset="100%" stop-color="#0c1c2c"/>
-    </linearGradient>
-    <radialGradient id="keyLight" cx="42%" cy="36%" r="30%">
-      <stop offset="0%"   stop-color="rgba(255,255,255,0.06)"/>
+    <!-- Key light from upper-left (soft white) -->
+    <radialGradient id="keyLight" cx="35%" cy="28%" r="45%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.18)"/>
       <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
     </radialGradient>
-    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
-      <stop offset="0%"   stop-color="rgba(13,33,55,0)"/>
-      <stop offset="100%" stop-color="rgba(13,33,55,0.65)"/>
+    <!-- Rim light from the right (orange brand colour) -->
+    <radialGradient id="rimLight" cx="88%" cy="40%" r="40%">
+      <stop offset="0%"   stop-color="rgba(232,93,4,0.22)"/>
+      <stop offset="100%" stop-color="rgba(232,93,4,0)"/>
     </radialGradient>
+    <!-- Vignette (darkens corners) -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%"  stop-color="rgba(4,9,18,0)"/>
+      <stop offset="100%" stop-color="rgba(4,9,18,0.72)"/>
+    </radialGradient>
+    <!-- Gradient for the figure itself: lit from upper-left -->
+    <linearGradient id="figureGrad" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.78)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.18)"/>
+    </linearGradient>
+    <!-- Hair (slightly darker than face) -->
+    <linearGradient id="hairGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.45)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.10)"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="600" height="800" fill="url(#portraitBg)"/>
 
-  <!-- Subtle key-light from upper left -->
-  <ellipse cx="260" cy="270" rx="220" ry="240" fill="url(#keyLight)"/>
+  <!-- Lighting layers -->
+  <rect width="600" height="800" fill="url(#keyLight)"/>
+  <rect width="600" height="800" fill="url(#rimLight)"/>
 
-  <!-- ── TORSO / SHOULDERS ───────────────────────── -->
-  <path d="M40 800 L40 560
-           Q40 500 100 476
-           Q200 448 300 442
-           Q400 448 500 476
-           Q560 500 560 560
-           L560 800 Z"
-        fill="url(#bodyGrad)"/>
+  <!-- ── BODY / TORSO ──────────────────────────────────── -->
+  <path d="M20 800 L20 572
+           Q20 510 88 484
+           Q192 450 300 444
+           Q408 450 512 484
+           Q580 510 580 572
+           L580 800 Z"
+        fill="url(#figureGrad)" opacity="0.9"/>
 
-  <!-- Collar / neckline suggestion -->
-  <path d="M252 448 L300 472 L348 448" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <!-- Collar / neckline detail -->
+  <path d="M255 450 L300 476 L345 450"
+        fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
 
-  <!-- ── NECK ─────────────────────────────────────── -->
-  <rect x="268" y="392" width="64" height="72" rx="14" fill="#112437"/>
+  <!-- ── NECK ─────────────────────────────────────────── -->
+  <rect x="270" y="394" width="60" height="68" rx="14"
+        fill="url(#figureGrad)" opacity="0.85"/>
 
-  <!-- ── HEAD ──────────────────────────────────────── -->
+  <!-- ── HEAD ──────────────────────────────────────────── -->
   <!-- Ears -->
-  <ellipse cx="178" cy="322" rx="15" ry="22" fill="#12253a"/>
-  <ellipse cx="422" cy="322" rx="15" ry="22" fill="#12253a"/>
-  <!-- Main head shape -->
-  <ellipse cx="300" cy="294" rx="124" ry="138" fill="#12253a"/>
-  <!-- Hair — top of head slightly darker -->
-  <path d="M178 210 Q178 150 300 144 Q422 150 422 210 Q422 176 300 170 Q178 176 178 210 Z" fill="#0b1c2e"/>
-  <ellipse cx="300" cy="162" rx="122" ry="52" fill="#0b1c2e"/>
+  <ellipse cx="180" cy="316" rx="14" ry="20" fill="url(#figureGrad)" opacity="0.75"/>
+  <ellipse cx="420" cy="316" rx="14" ry="20" fill="url(#figureGrad)" opacity="0.65"/>
 
-  <!-- ── FACE FEATURES (abstract — enough to read as a face) ── -->
-  <!-- Left eye -->
-  <ellipse cx="258" cy="292" rx="16" ry="10" fill="#0d1e30"/>
-  <ellipse cx="261" cy="290" rx="5"  ry="4"  fill="rgba(255,255,255,0.09)"/>
-  <!-- Right eye -->
-  <ellipse cx="342" cy="292" rx="16" ry="10" fill="#0d1e30"/>
-  <ellipse cx="345" cy="290" rx="5"  ry="4"  fill="rgba(255,255,255,0.09)"/>
-  <!-- Nose bridge (shadow only) -->
-  <path d="M296 318 Q296 334 300 340 Q304 334 304 318" fill="rgba(0,0,0,0.10)"/>
-  <!-- Mouth — closed, neutral/confident expression -->
-  <rect x="270" y="354" width="60" height="7" rx="3.5" fill="rgba(0,0,0,0.20)"/>
+  <!-- Head shape -->
+  <ellipse cx="300" cy="290" rx="122" ry="136" fill="url(#figureGrad)" opacity="0.92"/>
 
-  <!-- Vignette overlay for depth -->
+  <!-- Hair — slightly less opaque on top -->
+  <path d="M180 204 Q178 144 300 138 Q422 144 420 204
+           Q420 168 300 162 Q180 168 180 204 Z"
+        fill="url(#hairGrad)"/>
+  <ellipse cx="300" cy="156" rx="120" ry="50" fill="url(#hairGrad)"/>
+
+  <!-- ── FACE FEATURES ──────────────────────────────────── -->
+  <!-- Eyes — dark on light face, clearly readable -->
+  <ellipse cx="256" cy="287" rx="18" ry="12" fill="rgba(4,9,18,0.75)"/>
+  <ellipse cx="344" cy="287" rx="18" ry="12" fill="rgba(4,9,18,0.75)"/>
+  <!-- Eye highlights -->
+  <ellipse cx="260" cy="284" rx="5" ry="4" fill="rgba(255,255,255,0.55)"/>
+  <ellipse cx="348" cy="284" rx="5" ry="4" fill="rgba(255,255,255,0.55)"/>
+  <!-- Iris/pupil suggestion -->
+  <ellipse cx="258" cy="288" rx="9" ry="8"  fill="rgba(4,9,18,0.55)"/>
+  <ellipse cx="346" cy="288" rx="9" ry="8"  fill="rgba(4,9,18,0.55)"/>
+
+  <!-- Nose (subtle shadow) -->
+  <path d="M294 312 Q292 334 300 342 Q308 334 306 312"
+        fill="rgba(4,9,18,0.12)"/>
+  <!-- Nostrils -->
+  <ellipse cx="289" cy="342" rx="7" ry="5" fill="rgba(4,9,18,0.18)"/>
+  <ellipse cx="311" cy="342" rx="7" ry="5" fill="rgba(4,9,18,0.18)"/>
+
+  <!-- Mouth — closed, confident expression -->
+  <path d="M268 360 Q300 370 332 360" fill="none"
+        stroke="rgba(4,9,18,0.30)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ── VIGNETTE & BRAND BAR ───────────────────────────── -->
   <rect width="600" height="800" fill="url(#vignette)"/>
 
-  <!-- Orange brand accent bar at foot of frame -->
-  <rect x="0"   y="782" width="600" height="18" fill="rgba(232,93,4,0.28)"/>
-  <rect x="0"   y="782" width="600" height="2"  fill="rgba(232,93,4,0.55)"/>
+  <!-- Orange brand accent strip at foot -->
+  <rect x="0" y="780" width="600" height="20" fill="rgba(232,93,4,0.40)"/>
+  <rect x="0" y="780" width="600" height="2"  fill="rgba(232,93,4,0.75)"/>
 </svg>

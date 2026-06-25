@@ -553,17 +553,17 @@ h1, h2, h3, h4, h5, h6 {
   */
 }
 
-/* Dark directional overlay — keeps headline text legible over any photo */
+/* Dark directional overlay — left side dark for text, right side open to show the artwork */
 .hero-safeguarding-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
-    rgba(13,33,55,0.96) 0%,
-    rgba(13,33,55,0.82) 45%,
-    rgba(13,33,55,0.48) 75%,
-    rgba(13,33,55,0.22) 100%
+    to right,
+    rgba(13,33,55,0.93) 0%,
+    rgba(13,33,55,0.82) 38%,
+    rgba(13,33,55,0.38) 60%,
+    rgba(13,33,55,0.04) 100%
   );
 }
 
@@ -1900,16 +1900,17 @@ section {
   */
 }
 
-/* Dark overlay — text legibility over any photo */
+/* Dark overlay — left side protects text, right opens to reveal classroom scene */
 .workshops-banner-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(13,33,55,0.97) 0%,
-    rgba(13,33,55,0.86) 55%,
-    rgba(13,33,55,0.65) 100%
+    rgba(13,33,55,0.96) 0%,
+    rgba(13,33,55,0.78) 40%,
+    rgba(13,33,55,0.28) 65%,
+    rgba(13,33,55,0.05) 100%
   );
 }
 
