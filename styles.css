@@ -542,15 +542,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   background-color: var(--navy-dark);
-  background-image: url('images/hero-safeguarding-placeholder.svg');
+  background-image: url('images/hero-safeguarding-community.jpg');
   background-size: cover;
   background-position: center 30%;
-  /*
-    SWAP FOR HIGH-RES PHOTO WHEN READY:
-    background-image: url('images/hero-safeguarding-community.jpg');
-    Recommended: lone young person, dusk, urban South West location.
-    Gritty, high-contrast. No identifiable face without written consent.
-  */
 }
 
 /* Dark directional overlay — left side dark for text, right side open to show the artwork */
