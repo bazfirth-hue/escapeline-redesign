@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escapeline prevents child criminal and sexual exploitation across the South West. Free parent helpline, school workshops, and family support from people who've lived it.">
+  <meta name="theme-color" content="#1B3A5C">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Escapeline | Protecting Children from Exploitation">
+  <meta property="og:description" content="County Lines gangs are operating across the South West. Escapeline trains schools, supports families, and fights back.">
+  <meta property="og:url"         content="https://escapeline.org.uk">
+
+  <title>Escapeline | Protecting Children from Exploitation in the South West</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- =====================================================================
+       SKIP LINK (Accessibility)
+       ===================================================================== -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =====================================================================
+       QUICK EXIT BUTTON
+       Safety feature: instantly navigates away from this page.
+       Uses window.location.replace() so back button won't return here.
+       ===================================================================== -->
+  <button
+    class="quick-exit"
+    id="quickExit"
+    aria-label="Quick exit — leave this website immediately"
+    title="Click to leave this site quickly"
+  >
+    ✕ Quick Exit
+  </button>
+
+  <!-- =====================================================================
+       CRISIS BANNER — Always visible, sticky
+       ===================================================================== -->
+  <div class="crisis-banner" role="alert" aria-live="polite">
+    <p>
+      <strong>Worried about your child?</strong>
+      <a href="tel:08003893899" class="helpline-number" aria-label="Call our free parent helpline: 0800 389 3899">
+        0800 389 3899
+      </a>
+      <span class="helpline-hours">Free &nbsp;·&nbsp; Confidential &nbsp;·&nbsp; Tues &amp; Weds, 10am–1pm</span>
+    </p>
+  </div>
+
+  <!-- =====================================================================
+       HEADER & NAVIGATION
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+
+      <div class="nav-logo">
+        <a href="/" aria-label="Escapeline — return to homepage">
+          <span class="logo-wordmark">Escapeline</span>
+          <span class="logo-tagline">Educate &nbsp;·&nbsp; Empower &nbsp;·&nbsp; Prevent</span>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="navMenu"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#parents">For Parents</a></li>
+        <li><a href="#schools">For Schools</a></li>
+        <li><a href="#lived-experience">About Us</a></li>
+        <li><a href="#impact">Our Impact</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li>
+          <a href="tel:08003893899" class="nav-helpline-link" aria-label="Helpline: 0800 389 3899">
+            Helpline: 0800 389 3899
+          </a>
+        </li>
+        <li>
+          <a href="#donate" class="nav-donate-link">Donate Now</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- =====================================================================
+       MAIN CONTENT
+       ===================================================================== -->
+  <main id="main-content">
+
+    <!-- =================================================================
+         SECTION 1: HERO
+         ================================================================= -->
+    <section class="hero" aria-labelledby="heroHeadline">
+
+      <!-- Background — swap gradient for a real image in .hero-bg CSS -->
+      <div class="hero-bg" role="img" aria-label="Background: South West community"></div>
+
+      <div class="hero-content">
+        <div class="hero-inner">
+
+          <p class="hero-eyebrow">Child exploitation is happening in the South West. Right now.</p>
+
+          <h1 class="hero-headline" id="heroHeadline">
+            They're not <em>bad kids.</em><br>
+            They're being hunted.
+          </h1>
+
+          <p class="hero-subhead">
+            Criminal gangs groom and exploit young people across the South West —
+            in your community, at your child's school. Escapeline trains schools,
+            supports families, and stands between children and those who want to own them.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#parents"  class="btn btn-crisis btn-lg">
+              I'm worried about my child
+            </a>
+            <a href="#schools"  class="btn btn-educators btn-lg">
+              Book a school workshop
+            </a>
+            <a href="#donate"   class="btn btn-outline-white btn-lg">
+              Support our work
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">scroll</div>
+
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 2: STATISTICS BAR
+         ================================================================= -->
+    <section class="stats-bar" aria-labelledby="statsHeading">
+
+      <div class="container">
+
+        <p class="section-eyebrow text-center" id="statsHeading">
+          This is not a city problem. It is happening here.
+        </p>
+
+        <div class="stats-grid">
+
+          <div class="stat-item">
+            <span class="stat-number accent-crisis">50,000+</span>
+            <span class="stat-label">
+              Children exploited by county lines gangs across England
+            </span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number accent-orange">2,000+</span>
+            <span class="stat-label">
+              Active county lines operations operating across the UK
+            </span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number">Any child.</span>
+            <span class="stat-label">
+              Any background. Any age. Any community.<br>
+              No family is immune.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 3: LIVED EXPERIENCE
+         ================================================================= -->
+    <section class="lived-experience" id="lived-experience" aria-labelledby="livedExpHeading">
+
+      <div class="container">
+        <div class="lived-experience-grid">
+
+          <!-- Image column -->
+          <div class="lived-experience-image">
+            <div
+              class="img-placeholder"
+              role="img"
+              aria-label="Photograph of an Escapeline mentor — replace with real team photo"
+              style="min-height: 440px;"
+            >
+              <!-- SVG icon placeholder -->
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+              <span class="img-placeholder-label">Mentor Photograph</span>
+              <span class="img-placeholder-hint">Replace with a real photo of a named Escapeline mentor looking directly at camera</span>
+            </div>
+          </div>
+
+          <!-- Content column -->
+          <div class="lived-experience-content">
+
+            <span class="section-eyebrow">Who We Are</span>
+
+            <h2 class="section-title" id="livedExpHeading">
+              "We've sat where your child is sitting."
+            </h2>
+
+            <blockquote class="mentor-quote">
+              <p>
+                "I didn't realise I was being groomed until I was already in too deep.
+                I know exactly how they target young people — because they targeted me.
+                That's why I do this work."
+              </p>
+              <cite>— Escapeline Mentor, Expert by Experience
+                <br><em style="font-size:0.75rem;opacity:0.7;">[Replace with real mentor name and photo with their consent]</em>
+              </cite>
+            </blockquote>
+
+            <p>
+              Our mentors aren't reading from a textbook. They've been groomed.
+              They've been exploited. They got out. When a young person sits with one of
+              our mentors, they are not talking to another adult who doesn't understand —
+              they're talking to someone who genuinely, viscerally knows.
+            </p>
+
+            <p>
+              Some of the people who work alongside us are parents who lost children to
+              exploitation and turned that grief into a reason to make sure it doesn't
+              happen to the family next door. Their knowledge is why we work.
+            </p>
+
+            <a href="#" class="btn btn-primary" aria-label="Meet the Escapeline team">
+              Meet our team →
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 4: THREE AUDIENCE LANES
+         ================================================================= -->
+    <section class="audience-lanes" id="get-help" aria-labelledby="lanesHeading">
+
+      <div class="container">
+
+        <h2 class="section-title text-center" id="lanesHeading">
+          Who do you need us to be today?
+        </h2>
+        <p class="section-intro centered">
+          Escapeline serves parents in crisis, schools building resilience,
+          and funders driving change. Find your path below.
+        </p>
+
+        <div class="lanes-grid">
+
+          <!-- ── LANE 1: PARENTS ───────────────────────────────────── -->
+          <article class="lane lane-parents" id="parents" aria-labelledby="parentsHeading">
+
+            <div class="lane-icon" aria-hidden="true">👨‍👩‍👧</div>
+
+            <h3 id="parentsHeading">For Parents &amp; Families</h3>
+
+            <p class="lane-hook">
+              Something doesn't feel right.<br>Trust that feeling.
+            </p>
+
+            <p>
+              You don't need proof. You don't need all the answers. If something
+              about your child's behaviour has changed and your gut is telling you
+              something is wrong — that is enough to call us. Our helpline is free,
+              confidential, and run by people who understand exactly what you
+              are going through.
+            </p>
+
+            <ul class="signs-list" aria-label="Warning signs of exploitation">
+              <li>Unexplained money, gifts, or new possessions</li>
+              <li>Sudden changes in mood, behaviour, or friends</li>
+              <li>New, older friends you don't recognise</li>
+              <li>Staying out very late or going missing overnight</li>
+              <li>Becoming secretive about their phone</li>
+              <li>Withdrawing from family and longstanding friends</li>
+              <li>Out-of-character anger, fear, or anxiety</li>
+            </ul>
+
+            <div class="lane-ctas">
+              <a href="tel:08003893899" class="btn btn-crisis" aria-label="Call the parent helpline: 0800 389 3899">
+                Call 0800 389 3899
+              </a>
+              <a href="#" class="btn btn-outline-navy">
+                Parent resources →
+              </a>
+            </div>
+
+            <p class="helpline-note">
+              <small>
+                Free &nbsp;·&nbsp; Confidential &nbsp;·&nbsp; Tues &amp; Weds, 10am–1pm<br>
+                Outside these hours?
+                <a href="mailto:enquiries@escapeline.org.uk">Email us</a>
+                and we will call you back.
+              </small>
+            </p>
+
+          </article>
+
+          <!-- ── LANE 2: EDUCATORS ─────────────────────────────────── -->
+          <article class="lane lane-educators" id="schools" aria-labelledby="schoolsHeading">
+
+            <div class="lane-icon" aria-hidden="true">🏫</div>
+
+            <h3 id="schoolsHeading">For Schools &amp; Professionals</h3>
+
+            <p class="lane-hook">
+              Your students are being targeted.<br>Here's how to stop it.
+            </p>
+
+            <p>
+              We deliver hard-hitting, age-appropriate workshops and professional
+              training developed by people who have worked on the front line of
+              exploitation — and by experts who've lived it. Our sessions give
+              children, and the adults around them, the knowledge and strategies
+              to recognise and resist grooming before it takes hold.
+            </p>
+
+            <ul class="services-list" aria-label="Training and workshop options">
+              <li>Primary school workshops (Years 4, 5 &amp; 6)</li>
+              <li>Secondary school assemblies &amp; workshops (Years 7–13)</li>
+              <li>Professional training: social workers, youth workers, health staff, police</li>
+              <li>7-week targeted 1-to-1 support programme</li>
+              <li>Parent &amp; carer awareness evenings</li>
+            </ul>
+
+            <blockquote class="inline-testimonial">
+              <p>
+                "We are now aware one of our students is associating with a known
+                perpetrator and have put an intervention in place to prevent them
+                getting further involved."
+              </p>
+              <cite>— School staff member, post-training</cite>
+            </blockquote>
+
+            <div class="lane-ctas">
+              <a
+                href="mailto:enquiries@escapeline.org.uk?subject=Workshop%20Booking%20Enquiry"
+                class="btn btn-educators"
+              >
+                Book training →
+              </a>
+              <a href="#" class="btn btn-outline-navy">
+                Download resources →
+              </a>
+            </div>
+
+          </article>
+
+          <!-- ── LANE 3: DONORS ────────────────────────────────────── -->
+          <article class="lane lane-donors" id="donate-lane" aria-labelledby="donorsHeading">
+
+            <div class="lane-icon" aria-hidden="true">💚</div>
+
+            <h3 id="donorsHeading">For Donors &amp; Funders</h3>
+
+            <p class="lane-hook">
+              Your money is standing between<br>a child and a gang.
+            </p>
+
+            <p>
+              Escapeline runs on donations. There is no government safety net —
+              no contract, no underwriter. Every workshop, every mentoring session,
+              every call answered by a parent in crisis is funded entirely by people
+              who decided to act.
+            </p>
+
+            <div class="impact-amounts" aria-label="What your donation funds">
+              <div class="impact-item">
+                <span class="impact-amount">£25</span>
+                <span class="impact-desc">Funds one child's place in a targeted 1-to-1 support session</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-amount">£100</span>
+                <span class="impact-desc">Delivers a county lines workshop to a school class of 30</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-amount">£500</span>
+                <span class="impact-desc">Supports a family through a full month of mentoring &amp; advocacy</span>
+              </div>
+            </div>
+
+            <div class="lane-ctas">
+              <a href="#donate" class="btn btn-donate">
+                Donate now →
+              </a>
+              <a href="#impact" class="btn btn-outline-navy">
+                See our impact →
+              </a>
+            </div>
+
+          </article>
+
+        </div><!-- /lanes-grid -->
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 5: IMPACT METRICS
+         ================================================================= -->
+    <section class="impact-section" id="impact" aria-labelledby="impactHeading">
+
+      <div class="container">
+
+        <span class="section-eyebrow text-center" style="display:block;">Our Impact</span>
+
+        <h2 class="section-title text-center" id="impactHeading">
+          Does it actually work?
+        </h2>
+
+        <p class="section-intro centered">
+          Behind every number below is a young person who got the knowledge to say no,
+          a parent who got the help they needed, or a community that got safer.
+        </p>
+
+        <!-- Metrics — update figures each year -->
+        <div class="impact-metrics-grid" role="list">
+
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">
+              <!-- Replace with real number -->
+              <em>[Update]</em>
+            </span>
+            <span class="metric-label">Young people educated &amp; supported</span>
+          </div>
+
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">
+              <em>[Update]</em>
+            </span>
+            <span class="metric-label">Schools and colleges reached</span>
+          </div>
+
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">
+              <em>[Update]</em>
+            </span>
+            <span class="metric-label">Professionals trained</span>
+          </div>
+
+          <div class="metric-card" role="listitem">
+            <span class="metric-number">
+              <em>[Update]</em>
+            </span>
+            <span class="metric-label">Families supported through crisis</span>
+          </div>
+
+        </div>
+        <!-- ↑ NOTE TO ESCAPELINE TEAM: Populating these four numbers is the
+             single most important content action before launch. Even approximate
+             figures transform donor trust and conversion rates. -->
+
+        <!-- Testimonials -->
+        <div class="testimonials-row" aria-label="Testimonials from those we've helped">
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>Hard-hitting but very informative. Outstanding.</p>
+            <cite>— Professional training delegate</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>
+              After you taught us about county lines I feel a lot safer.
+              I am now more cautious about talking to people older than me.
+            </p>
+            <cite>— Young person, post-workshop</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>
+              The feedback from children was overwhelmingly positive. They could
+              identify something they had learnt and they all had good tips on
+              how to stay safe.
+            </p>
+            <cite>— Teacher, post-workshop</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>I went home that day and I felt safer.</p>
+            <cite>— Workshop attendee</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>
+              Very informative. Excellent trainer. All professionals working
+              with young people should attend this training.
+            </p>
+            <cite>— Professional training delegate</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>
+              The parenting session generated lots of discussion. Parents were
+              open with each other about their concerns and what they can do to
+              keep their children safe.
+            </p>
+            <cite>— Parent session facilitator</cite>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 6: DONATION
+         ================================================================= -->
+    <section class="donate-section" id="donate" aria-labelledby="donateHeading">
+
+      <div class="container">
+
+        <div class="donate-grid">
+
+          <!-- Copy column -->
+          <div class="donate-copy">
+
+            <span class="section-eyebrow">Support Our Work</span>
+
+            <h2 class="section-title" id="donateHeading">
+              Your money is standing between a child and a gang.
+            </h2>
+
+            <p>
+              Escapeline is entirely funded through donations, grants, and
+              the generosity of people in this community who refuse to look away.
+              There is no government safety net. No contract. No underwriter.
+            </p>
+
+            <p class="highlight-stat">
+              Every workshop, every mentoring session, every call answered by a
+              parent in crisis — funded by people who chose to act.
+            </p>
+
+            <p>
+              When you donate to Escapeline, you are not making a charitable
+              contribution to an abstract cause. You are directly funding the
+              people who stand in front of classrooms, answer phones at 10am
+              on a Tuesday, and sit across from families who have nowhere else
+              to turn.
+            </p>
+
+            <p>
+              <strong>Registered charity no. 1184475.</strong>
+              All donations are handled securely. Gift Aid available for
+              UK taxpayers.
+            </p>
+
+          </div>
+
+          <!-- Interactive donation widget -->
+          <div class="donate-widget" aria-labelledby="donateWidgetTitle">
+
+            <h3 id="donateWidgetTitle">Make a donation</h3>
+
+            <!-- Monthly / One-off toggle -->
+            <div class="frequency-toggle" role="group" aria-label="Donation frequency">
+              <button class="freq-btn active" data-freq="monthly" aria-pressed="true">
+                Give monthly
+              </button>
+              <button class="freq-btn" data-freq="once" aria-pressed="false">
+                Give once
+              </button>
+            </div>
+
+            <!-- Preset amounts -->
+            <div class="amount-grid" role="group" aria-label="Select a donation amount">
+              <button class="amount-btn" data-amount="10" aria-pressed="false">
+                <span class="amount-value">£10</span>
+                <span class="amount-impact">Monthly support</span>
+              </button>
+              <button class="amount-btn selected" data-amount="25" aria-pressed="true">
+                <span class="amount-value">£25</span>
+                <span class="amount-impact">1 child's session</span>
+              </button>
+              <button class="amount-btn" data-amount="50" aria-pressed="false">
+                <span class="amount-value">£50</span>
+                <span class="amount-impact">Family support</span>
+              </button>
+              <button class="amount-btn" data-amount="100" aria-pressed="false">
+                <span class="amount-value">£100</span>
+                <span class="amount-impact">School workshop</span>
+              </button>
+              <button class="amount-btn" data-amount="250" aria-pressed="false">
+                <span class="amount-value">£250</span>
+                <span class="amount-impact">Month of mentoring</span>
+              </button>
+              <button class="amount-btn" data-amount="500" aria-pressed="false">
+                <span class="amount-value">£500</span>
+                <span class="amount-impact">Full support programme</span>
+              </button>
+            </div>
+
+            <!-- Custom amount -->
+            <div class="custom-amount-wrap">
+              <span class="custom-amount-prefix" aria-hidden="true">£</span>
+              <input
+                class="custom-amount-input"
+                id="customAmount"
+                type="number"
+                inputmode="numeric"
+                min="1"
+                placeholder="Other amount"
+                aria-label="Enter a custom donation amount in pounds"
+              >
+            </div>
+
+            <!-- Donate CTA -->
+            <a
+              href="https://www.justgiving.com/escapeline"
+              class="btn btn-donate btn-lg"
+              id="donateBtn"
+              aria-label="Donate £25 monthly to Escapeline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate £25 monthly →
+            </a>
+            <!-- ↑ Replace href with Escapeline's actual donation page URL -->
+
+            <p class="donate-reassurance">
+              <!-- Lock icon SVG -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              Secure payment. Gift Aid available for UK taxpayers.
+              Charity no. 1184475.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         SECTION 7: FAQ ACCORDION
+         ================================================================= -->
+    <section class="faq-section" id="faq" aria-labelledby="faqHeading">
+
+      <div class="container">
+
+        <span class="section-eyebrow text-center" style="display:block;">Common Questions</span>
+
+        <h2 class="section-title text-center" id="faqHeading">
+          You're not the first parent to feel this way.
+        </h2>
+
+        <div class="accordion" id="faqAccordion" role="list">
+
+          <!-- Item 1 -->
+          <div class="accordion-item" role="listitem">
+            <button
+              class="accordion-trigger"
+              aria-expanded="false"
+              aria-controls="faq1-body"
+              id="faq1-trigger"
+            >
+              My child says they're fine and nothing is going on. Should I still call?
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="accordion-body"
+              id="faq1-body"
+              role="region"
+              aria-labelledby="faq1-trigger"
+            >
+              <div class="accordion-body-inner">
+                <p>
+                  Yes. Children being exploited will almost always deny it — to parents,
+                  teachers, and police. This isn't deception; it's the result of grooming,
+                  fear, and in many cases, a genuine loyalty to their exploiters that has
+                  been carefully built over time.
+                </p>
+                <p>
+                  Their denial does not mean you are wrong. It often means the grooming
+                  is working exactly as the gang intended. Trust your instincts, not
+                  their reassurances.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item" role="listitem">
+            <button
+              class="accordion-trigger"
+              aria-expanded="false"
+              aria-controls="faq2-body"
+              id="faq2-trigger"
+            >
+              How do I know if it's exploitation or just normal teenage behaviour?
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="accordion-body"
+              id="faq2-body"
+              role="region"
+              aria-labelledby="faq2-trigger"
+            >
+              <div class="accordion-body-inner">
+                <p>
+                  It's a genuinely hard question, and one our helpline can help you think
+                  through. The key difference is usually <em>pattern and combination</em>:
+                  one warning sign in isolation might be normal teenage behaviour;
+                  several warning signs appearing together, or an unexplained sudden change,
+                  is worth a conversation.
+                </p>
+                <p>
+                  Particularly significant: unexplained money or gifts, new older friends
+                  you can't identify, and a child who seems frightened of something they
+                  won't name. You know your child. Call us.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item" role="listitem">
+            <button
+              class="accordion-trigger"
+              aria-expanded="false"
+              aria-controls="faq3-body"
+              id="faq3-trigger"
+            >
+              Will calling the helpline get my child in trouble with the police?
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="accordion-body"
+              id="faq3-body"
+              role="region"
+              aria-labelledby="faq3-trigger"
+            >
+              <div class="accordion-body-inner">
+                <p>
+                  Our helpline is independent, confidential, and run by Escapeline —
+                  not by the police. We will not share information about your call with
+                  any authority without your knowledge and agreement, except in
+                  circumstances where there is an immediate risk to life.
+                </p>
+                <p>
+                  Your child is a victim, not a criminal. Our role is to support your
+                  family, help you understand your options, and advocate for the right
+                  safeguarding response.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item" role="listitem">
+            <button
+              class="accordion-trigger"
+              aria-expanded="false"
+              aria-controls="faq4-body"
+              id="faq4-trigger"
+            >
+              What exactly is "county lines" and how does it work?
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="accordion-body"
+              id="faq4-body"
+              role="region"
+              aria-labelledby="faq4-trigger"
+            >
+              <div class="accordion-body-inner">
+                <p>
+                  County lines is the name given to organised criminal networks that use
+                  a dedicated phone line — the "line" — to sell drugs from a city into
+                  smaller towns and rural areas. The gangs recruit young people to
+                  transport and sell drugs along these routes.
+                </p>
+                <p>
+                  They target young people specifically because they are less likely to
+                  be stopped, searched, or prosecuted. Grooming begins with gifts,
+                  attention, and a sense of belonging — often long before the young
+                  person realises what is happening. By the time they do, debt bondage,
+                  threats, and psychological control make it very hard to leave.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item" role="listitem">
+            <button
+              class="accordion-trigger"
+              aria-expanded="false"
+              aria-controls="faq5-body"
+              id="faq5-trigger"
+            >
+              My child is 16 or 17. Is it too late for Escapeline to help?
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div
+              class="accordion-body"
+              id="faq5-body"
+              role="region"
+              aria-labelledby="faq5-trigger"
+            >
+              <div class="accordion-body-inner">
+                <p>
+                  It is never too late. We work with young people across a wide age range
+                  and with their families. Older teenagers are often at greater risk
+                  because statutory protections reduce as they approach 18 — which is
+                  exactly when gangs may escalate pressure on them.
+                </p>
+                <p>
+                  Please call us whatever your child's age.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /accordion -->
+
+      </div>
+    </section>
+
+  </main><!-- /main content -->
+
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <span class="logo-wordmark">Escapeline</span>
+          <span class="logo-tagline">Educate &nbsp;·&nbsp; Empower &nbsp;·&nbsp; Prevent</span>
+          <p>
+            Preventing the criminal and sexual exploitation of young people
+            by gangs across the South West of England — through education,
+            community awareness, and expert family support.
+          </p>
+          <p class="footer-charity-no">Registered charity no. 1184475</p>
+        </div>
+
+        <!-- Links column -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#parents">Parent Helpline</a></li>
+            <li><a href="#schools">School Workshops</a></li>
+            <li><a href="#schools">Professional Training</a></li>
+            <li><a href="#schools">1-to-1 Support</a></li>
+            <li><a href="#schools">Community Awareness</a></li>
+          </ul>
+        </div>
+
+        <!-- About links -->
+        <div class="footer-col">
+          <h4>Organisation</h4>
+          <ul>
+            <li><a href="#lived-experience">About Us</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Helpline box -->
+        <div class="footer-col">
+          <div class="footer-helpline-box">
+            <h4>Parent Helpline</h4>
+            <a href="tel:08003893899" class="footer-helpline-number" aria-label="Call 0800 389 3899">
+              0800 389 3899
+            </a>
+            <p class="footer-helpline-hours">
+              Free &amp; confidential<br>
+              Tuesdays &amp; Wednesdays, 10am–1pm
+            </p>
+            <p class="footer-helpline-alt">
+              Outside helpline hours?<br>
+              <a href="mailto:enquiries@escapeline.org.uk">
+                enquiries@escapeline.org.uk
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Escapeline. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Safeguarding Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Sitemap</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =====================================================================
+       JAVASCRIPT — Vanilla, no dependencies
+       ===================================================================== -->
+  <script>
+    'use strict';
+
+    /* ------------------------------------------------------------------
+       QUICK EXIT
+       Navigates away immediately using replace() so the back button
+       will not return the user to this site.
+       ------------------------------------------------------------------ */
+    document.getElementById('quickExit').addEventListener('click', function () {
+      // Navigate to a safe, innocuous page instantly
+      window.location.replace('https://www.bbc.co.uk/weather');
+    });
+
+    // Keyboard shortcut: press Escape to trigger quick exit
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        window.location.replace('https://www.bbc.co.uk/weather');
+      }
+    });
+
+
+    /* ------------------------------------------------------------------
+       MOBILE NAVIGATION TOGGLE
+       ------------------------------------------------------------------ */
+    const navToggle = document.getElementById('navToggle');
+    const navMenu   = document.getElementById('navMenu');
+
+    navToggle.addEventListener('click', function () {
+      const isOpen = navMenu.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu on outside click
+    document.addEventListener('click', function (e) {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+
+    /* ------------------------------------------------------------------
+       STICKY HEADER: add .scrolled class for stronger shadow
+       ------------------------------------------------------------------ */
+    const siteHeader = document.getElementById('siteHeader');
+
+    window.addEventListener('scroll', function () {
+      siteHeader.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+
+    /* ------------------------------------------------------------------
+       FAQ ACCORDION
+       Uses CSS grid-template-rows trick for smooth animation.
+       ------------------------------------------------------------------ */
+    document.querySelectorAll('.accordion-trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        const bodyId     = this.getAttribute('aria-controls');
+        const body       = document.getElementById(bodyId);
+
+        // Close all other items first
+        document.querySelectorAll('.accordion-trigger').forEach(function (other) {
+          if (other !== trigger) {
+            other.setAttribute('aria-expanded', 'false');
+            const otherBodyId = other.getAttribute('aria-controls');
+            const otherBody   = document.getElementById(otherBodyId);
+            if (otherBody) otherBody.classList.remove('is-open');
+          }
+        });
+
+        // Toggle this item
+        this.setAttribute('aria-expanded', !isExpanded);
+        body.classList.toggle('is-open', !isExpanded);
+      });
+    });
+
+
+    /* ------------------------------------------------------------------
+       DONATION WIDGET
+       Frequency toggle + amount selection + donate button label update
+       ------------------------------------------------------------------ */
+    const freqBtns    = document.querySelectorAll('.freq-btn');
+    const amountBtns  = document.querySelectorAll('.amount-btn');
+    const customInput = document.getElementById('customAmount');
+    const donateBtn   = document.getElementById('donateBtn');
+
+    let currentFreq   = 'monthly';
+    let currentAmount = 25;
+
+    function updateDonateBtn() {
+      const freqLabel = currentFreq === 'monthly' ? 'monthly' : 'now';
+      donateBtn.textContent = 'Donate £' + currentAmount + ' ' + freqLabel + ' →';
+      donateBtn.setAttribute('aria-label', 'Donate £' + currentAmount + ' ' + freqLabel + ' to Escapeline');
+    }
+
+    // Frequency toggle
+    freqBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        freqBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+        currentFreq = this.dataset.freq;
+
+        // Update impact labels for monthly vs one-off
+        amountBtns.forEach(function (ab) {
+          const impact = ab.querySelector('.amount-impact');
+          if (!impact) return;
+          if (currentFreq === 'monthly') {
+            const monthlyLabels = {
+              '10':  'Monthly support',
+              '25':  '1 child\'s session',
+              '50':  'Family support',
+              '100': 'School workshop',
+              '250': 'Month of mentoring',
+              '500': 'Full programme'
+            };
+            impact.textContent = monthlyLabels[ab.dataset.amount] || '';
+          } else {
+            const onceLabels = {
+              '10':  'A small gesture',
+              '25':  '1 child\'s session',
+              '50':  '2 support sessions',
+              '100': 'School workshop',
+              '250': 'Month of mentoring',
+              '500': 'Full support programme'
+            };
+            impact.textContent = onceLabels[ab.dataset.amount] || '';
+          }
+        });
+
+        updateDonateBtn();
+      });
+    });
+
+    // Amount selection
+    amountBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        amountBtns.forEach(function (b) {
+          b.classList.remove('selected');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('selected');
+        this.setAttribute('aria-pressed', 'true');
+        currentAmount = parseInt(this.dataset.amount, 10);
+        customInput.value = '';
+        updateDonateBtn();
+      });
+    });
+
+    // Custom amount input
+    customInput.addEventListener('input', function () {
+      amountBtns.forEach(function (b) {
+        b.classList.remove('selected');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      const val = parseInt(this.value, 10);
+      if (!isNaN(val) && val > 0) {
+        currentAmount = val;
+        updateDonateBtn();
+      }
+    });
+
+
+    /* ------------------------------------------------------------------
+       FOOTER YEAR
+       ------------------------------------------------------------------ */
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+    /* ------------------------------------------------------------------
+       INTERSECTION OBSERVER: fade-in sections on scroll
+       ------------------------------------------------------------------ */
+    if ('IntersectionObserver' in window) {
+      const fadeEls = document.querySelectorAll(
+        '.stat-item, .lane, .metric-card, .testimonial-card, .accordion-item, .impact-item'
+      );
+
+      // Set initial state via JS (not CSS) so non-JS users see content
+      fadeEls.forEach(function (el) {
+        el.style.opacity  = '0';
+        el.style.transform = 'translateY(18px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      });
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity   = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      fadeEls.forEach(function (el) { observer.observe(el); });
+    }
+
+  </script>
+
+</body>
+</html>
